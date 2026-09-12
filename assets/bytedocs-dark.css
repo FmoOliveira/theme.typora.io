@@ -1,0 +1,80 @@
+/*
+ * ByteDocs Dark — a minimal editorial theme for Typora
+ * Dark mode / Windows, macOS, and Linux
+ */
+:root {
+  --bg-color: #191d1b;
+  --paper: #212722;
+  --text-color: #e8e5d9;
+  --muted-color: #abb1a3;
+  --md-char-color: #707c6b;
+  --meta-content-color: #efa17e;
+  --primary-color: #a2b2ff;
+  --primary-btn-border-color: #a2b2ff;
+  --primary-btn-text-color: #191d1b;
+  --window-border: 1px solid #384039;
+  --active-file-bg-color: #242d44;
+  --active-file-text-color: #e8e5d9;
+  --active-file-border-color: #efa17e;
+  --side-bar-bg-color: #191d1b;
+  --item-hover-bg-color: #352a24;
+  --item-hover-text-color: #e8e5d9;
+  --monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --body-font: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+html { font-size: 16px; background: var(--bg-color); }
+body { background: var(--bg-color); color: var(--text-color); font-family: var(--ui-font); }
+#write { max-width: 860px; margin: 0 auto; padding: 5.5rem 3rem 7rem; font-family: var(--body-font); font-size: 1.08rem; line-height: 1.78; }
+#write > * { max-width: 70ch; }
+#write p { margin: 0 0 1.35rem; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { color: var(--text-color); font-family: var(--body-font); font-weight: 600; line-height: 1.16; letter-spacing: -.035em; }
+#write h1 { margin: 0 0 2.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--text-color); font-size: 3.2rem; font-weight: 400; }
+#write h2 { margin: 3.1rem 0 1rem; padding-top: 1rem; border-top: 1px solid #384039; font-size: 2rem; }
+#write h3 { margin: 2rem 0 .7rem; font-size: 1.3rem; }
+#write h4, #write h5, #write h6 { margin: 1.5rem 0 .5rem; font-size: 1.05rem; }
+#write h1:before, #write h2:before, #write h3:before, #write h4:before, #write h5:before, #write h6:before { color: var(--meta-content-color); font-family: var(--monospace); font-size: .55em; font-weight: 400; letter-spacing: .05em; }
+#write h1:before { content: "01  "; } #write h2:before { content: "02  "; } #write h3:before { content: "03  "; }
+#write a { color: var(--primary-color); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+#write a:hover { color: var(--meta-content-color); }
+#write strong { font-weight: 700; } #write em { color: var(--meta-content-color); }
+#write blockquote { margin: 1.7rem 0; padding: .9rem 1.25rem; border-left: 3px solid var(--meta-content-color); background: #352a24; color: var(--text-color); }
+#write blockquote p:last-child { margin-bottom: 0; }
+#write ul, #write ol { margin: 0 0 1.35rem; padding-left: 1.6rem; } #write li { margin: .3rem 0; }
+#write ul li::marker, #write ol li::marker { color: var(--meta-content-color); font-family: var(--monospace); }
+#write hr { margin: 2.4rem 0; border: 0; border-top: 1px solid #384039; }
+#write img { display: block; max-width: 100%; height: auto; margin: 1.8rem auto; border: 1px solid #384039; }
+#write table { width: 100%; margin: 1.7rem 0; border-collapse: collapse; font-family: var(--ui-font); font-size: .9rem; }
+#write th, #write td { padding: .7rem .8rem; border: 1px solid #384039; text-align: left; }
+#write th { background: #262e27; font-weight: 600; }
+#write code, .CodeMirror, .CodeMirror pre, pre.md-fences { font-family: var(--monospace); }
+#write code { padding: .12em .35em; border-radius: 2px; background: #292f29; color: #f1bc95; font-size: .86em; }
+#write pre.md-fences { margin: 1.7rem 0; padding: 1.15rem 1.25rem; border: 1px solid #414940; border-radius: 0; background: #111513; color: #eeeee4; font-size: .84rem; line-height: 1.7; }
+#write pre.md-fences .code-tooltip { background: #111513; }
+#write mark { background: #81472e; color: var(--text-color); }
+#write .md-footnote { color: var(--primary-color); }
+#write .md-toc { padding: 1rem 1.25rem; border: 1px solid #384039; background: var(--paper); }
+#write .md-toc-content { font-family: var(--ui-font); font-size: .9rem; }
+#write .md-toc-h2, #write .md-toc-h3 { color: var(--primary-color); }
+#write .md-image > .md-meta, #write .md-meta { color: var(--md-char-color); }
+#write .md-line.md-focus { background: #242d44; }
+.cm-s-typora-default .cm-header, .cm-s-inner .cm-header { color: var(--text-color); }
+.cm-s-typora-default .cm-link, .cm-s-inner .cm-link { color: var(--primary-color); }
+.cm-s-typora-default .cm-comment, .cm-s-inner .cm-comment { color: #8b9587; }
+.cm-s-typora-default .cm-string, .cm-s-inner .cm-string { color: #a4c48a; }
+.cm-s-typora-default .cm-number, .cm-s-inner .cm-number { color: #f1bc95; }
+#typora-sidebar { background: var(--side-bar-bg-color); border-right: 1px solid #384039; }
+#typora-sidebar .file-list-item, #typora-sidebar .sidebar-content { color: var(--text-color); }
+#typora-sidebar .file-list-item:hover, #typora-sidebar .file-node-content:hover { background: var(--item-hover-bg-color); }
+#typora-sidebar .file-list-item.active { background: var(--active-file-bg-color); border-left: 3px solid var(--active-file-border-color); color: var(--active-file-text-color); }
+#outline-content .outline-item:hover, #outline-content .outline-item.selected { background: var(--item-hover-bg-color); color: var(--text-color); }
+#outline-content .outline-label { font-family: var(--ui-font); }
+.md-fences.md-focus { border-color: var(--primary-color); }
+.megamenu-content, .modal-content, .context-menu { background: var(--paper); color: var(--text-color); }
+.megamenu-menu-header, .megamenu-menu-list li a { color: var(--text-color); }
+.btn, button { border-radius: 0; }
+.btn-primary { background: var(--primary-color); border-color: var(--primary-color); color: var(--primary-btn-text-color); }
+input, textarea, select { background: var(--paper); color: var(--text-color); border-color: #707c6b; }
+::-webkit-scrollbar-thumb { background: #707c6b; } ::-webkit-scrollbar-track { background: var(--bg-color); }
+@media print { html, body { background: #fff !important; } #write { max-width: none; padding: 1rem; color: #000; } #typora-sidebar { display: none; } #write pre.md-fences { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (max-width: 700px) { #write { padding: 3.5rem 1.5rem 5rem; font-size: 1rem; } #write h1 { font-size: 2.5rem; } #write h2 { font-size: 1.75rem; } }

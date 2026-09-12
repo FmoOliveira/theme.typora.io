@@ -31,7 +31,7 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { color: var(--text-color); font-family: var(--body-font); font-weight: 600; line-height: 1.16; letter-spacing: -.035em; }
 #write h1 { margin: 0 0 2.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--text-color); font-size: 3.2rem; font-weight: 400; }
 #write h2 { margin: 3.1rem 0 1rem; padding-top: 1rem; border-top: 1px solid #384039; font-size: 2rem; }
-#write h3 { margin: 2.15rem 0 .8rem; font-size: 1.4rem; }
+#write h3 { margin: 2.15rem 0 .8rem; font-size: 1.6rem; font-weight: 700; }
 #write h4, #write h5, #write h6 { margin: 1.5rem 0 .5rem; font-size: 1.05rem; }
 #write h1::before, #write h2::before, #write h3::before, #write h4::before, #write h5::before, #write h6::before { content: none; }
 #write a { color: var(--primary-color); text-decoration-thickness: 1px; text-underline-offset: .18em; }
@@ -97,7 +97,7 @@ input, textarea, select { background: var(--paper); color: var(--text-color); bo
 @media print { html, body { background: #fff !important; } #write { max-width: none; padding: 1rem; color: #000; } #typora-sidebar { display: none; } #write pre.md-fences { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 /* Full Markdown surface: quiet structure and predictable reading rhythm. */
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write ul, #write ol, #write blockquote, #write pre, #write table, #write .md-toc { box-sizing: border-box; width: 100%; max-width: none; }
-#write h4 { font-size: 1.18rem; letter-spacing: -.01em; } #write h5 { font-size: 1.04rem; letter-spacing: -.01em; text-transform: none; } #write h6 { color: var(--muted-color); font-family: var(--body-font); font-size: .94rem; letter-spacing: 0; text-transform: none; }
+#write h4 { font-size: 1.15rem; font-weight: 400; letter-spacing: -.005em; } #write h5 { font-size: 1.05rem; letter-spacing: -.01em; text-transform: none; } #write h6 { color: var(--muted-color); font-family: var(--body-font); font-size: .95rem; letter-spacing: 0; text-transform: none; }
 #write del { color: var(--muted-color); text-decoration-thickness: 1px; } #write sup, #write sub { font-family: var(--ui-font); font-size: .72em; } #write kbd { display: inline-block; padding: .05em .38em; border: 1px solid #59635b; border-bottom-width: 2px; border-radius: 3px; background: var(--paper); color: var(--text-color); font-family: var(--monospace); font-size: .78em; line-height: 1.45; }
 #write dl { margin: 1.5rem 0; } #write dt { margin-top: 1rem; color: var(--text-color); font-family: var(--ui-font); font-weight: 650; } #write dd { margin: .25rem 0 0 1.5rem; color: var(--muted-color); } #write abbr[title] { text-decoration: underline dotted; text-underline-offset: .2em; cursor: help; }
 #write details { margin: 2rem 0; padding: .35rem 0 .35rem 1rem; border: 0; border-left: 2px solid #384039; background: transparent; } #write summary { cursor: pointer; color: var(--text-color); font-family: var(--ui-font); font-weight: 600; } #write details[open] summary { margin-bottom: .75rem; }

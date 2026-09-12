@@ -48,8 +48,8 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 #write th { background: #eae7dd; font-weight: 600; }
 #write code, .CodeMirror, .CodeMirror pre, pre.md-fences { font-family: var(--monospace); }
 #write code { padding: .12em .35em; border-radius: 2px; background: #e8e5db; color: #89391f; font-size: .86em; }
-#write pre.md-fences { margin: 1.7rem 0; padding: 1.15rem 1.25rem; border: 1px solid #414940; border-radius: 0; background: #242b27; color: #eeeee4; font-size: .84rem; line-height: 1.7; }
-#write pre.md-fences .code-tooltip { background: #242b27; }
+#write pre.md-fences { margin: 1.7rem 0; padding: 1.15rem 1.25rem; border: 1px solid #d6c8b2; border-radius: 3px; background: #eee4d3; color: #2d332f; font-size: .84rem; line-height: 1.7; }
+#write pre.md-fences .code-tooltip { background: #eee4d3; }
 #write mark { background: #f2ca9e; color: var(--text-color); }
 #write .md-footnote { color: var(--primary-color); }
 #write .md-toc { padding: 1rem 1.25rem; border: 1px solid #d3d2c5; background: var(--paper); }
@@ -59,17 +59,17 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 #write .md-meta { color: var(--md-char-color); }
 #write .md-line.md-focus { background: #ebeefa; }
 .CodeMirror-selected, .CodeMirror-selectedtext, .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #b8c9dc !important; color: #17202a !important; text-shadow: none !important; }
-.cm-s-inner { background: #242b27; color: #eeeee4; }
-.cm-s-inner .cm-variable, .cm-s-inner .cm-variable-2, .cm-s-inner .cm-variable-3, .cm-s-inner .cm-property, .cm-s-inner .cm-operator { color: #eeeee4; }
-.cm-s-inner .cm-keyword { color: #c5b7ff; }
-.cm-s-inner .cm-def, .cm-s-inner .cm-variable-3 { color: #a2b2ff; }
-.cm-s-inner .cm-type, .cm-s-inner .cm-builtin, .cm-s-inner .cm-qualifier { color: #8fd3c1; }
-.cm-s-inner .cm-string, .cm-s-inner .cm-string-2 { color: #bed59c; }
-.cm-s-inner .cm-comment { color: #abb3a7; }
-.cm-s-inner .cm-number, .cm-s-inner .cm-atom { color: #f2af91; }
-.cm-s-inner .cm-meta, .cm-s-inner .cm-tag, .cm-s-inner .cm-attribute { color: #f4c888; }
-.cm-s-inner .cm-bracket, .cm-s-inner .cm-punctuation { color: #e3e7db; }
-.cm-s-inner .cm-link { color: #a2b2ff; }
+.cm-s-inner { background: #eee4d3; color: #2d332f; }
+.cm-s-inner .cm-variable, .cm-s-inner .cm-variable-2, .cm-s-inner .cm-variable-3, .cm-s-inner .cm-property, .cm-s-inner .cm-operator { color: #2d332f; }
+.cm-s-inner .cm-keyword { color: #9a4f3e; }
+.cm-s-inner .cm-def, .cm-s-inner .cm-variable-3 { color: #4e5e88; }
+.cm-s-inner .cm-type, .cm-s-inner .cm-builtin, .cm-s-inner .cm-qualifier { color: #24635c; }
+.cm-s-inner .cm-string, .cm-s-inner .cm-string-2 { color: #66723a; }
+.cm-s-inner .cm-comment { color: #625b52; font-style: italic; }
+.cm-s-inner .cm-number, .cm-s-inner .cm-atom { color: #9b6a25; }
+.cm-s-inner .cm-meta, .cm-s-inner .cm-tag, .cm-s-inner .cm-attribute { color: #8c5d1e; }
+.cm-s-inner .cm-bracket, .cm-s-inner .cm-punctuation { color: #51554d; }
+.cm-s-inner .cm-link { color: #4e5e88; }
 .cm-s-typora-default { background: var(--bg-color); color: var(--text-color); }
 .cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property { color: var(--text-color); }
 .cm-s-typora-default .cm-variable, .cm-s-typora-default .cm-variable-2, .cm-s-typora-default .cm-variable-3, .cm-s-typora-default .cm-def, .cm-s-typora-default .cm-operator { color: var(--text-color); }
@@ -77,8 +77,8 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 .cm-s-typora-default .cm-comment { color: #50724c; }
 .cm-s-typora-default .cm-string { color: #89391f; }
 .cm-s-typora-default .cm-number, .cm-s-typora-default .cm-atom { color: #ad3d21; }
-#write .md-fences .CodeMirror, #write .md-fences .CodeMirror-scroll { background: #242b27; color: #eeeee4; }
-#write .md-fences .CodeMirror pre { color: #eeeee4; }
+#write .md-fences .CodeMirror, #write .md-fences .CodeMirror-scroll { background: #eee4d3; color: #2d332f; }
+#write .md-fences .CodeMirror pre { color: #2d332f; }
 #typora-sidebar { background: var(--side-bar-bg-color); border-right: 1px solid #d3d2c5; }
 #typora-sidebar .file-list-item, #typora-sidebar .sidebar-content { color: var(--text-color); }
 #typora-sidebar .file-list-item:hover, #typora-sidebar .file-node-content:hover { background: var(--item-hover-bg-color); }

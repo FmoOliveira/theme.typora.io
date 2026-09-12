@@ -25,8 +25,8 @@
 }
 html { font-size: 16px; background: var(--bg-color); }
 body { background: var(--bg-color); color: var(--text-color); font-family: var(--ui-font); }
-#write { max-width: 860px; margin: 0 auto; padding: 5.5rem 3rem 7rem; font-family: var(--body-font); font-size: 1.08rem; line-height: 1.78; }
-#write > * { max-width: 70ch; }
+#write { max-width: 1120px; margin: 0 auto; padding: 5.5rem 4vw 7rem; font-family: var(--body-font); font-size: 1.08rem; line-height: 1.78; }
+#write > * { max-width: 76ch; }
 #write p { margin: 0 0 1.35rem; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { color: var(--text-color); font-family: var(--body-font); font-weight: 600; line-height: 1.16; letter-spacing: -.035em; }
 #write h1 { margin: 0 0 2.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--text-color); font-size: 3.2rem; font-weight: 400; }
@@ -58,6 +58,7 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 #write .md-image > .md-meta { color: var(--muted-color); }
 #write .md-meta { color: var(--md-char-color); }
 #write .md-line.md-focus { background: #ebeefa; }
+.CodeMirror-selected, .CodeMirror-selectedtext, .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #b8c9dc !important; color: #17202a !important; text-shadow: none !important; }
 .cm-s-inner { background: #242b27; color: #eeeee4; }
 .cm-s-inner .cm-variable, .cm-s-inner .cm-variable-2, .cm-s-inner .cm-variable-3, .cm-s-inner .cm-property, .cm-s-inner .cm-operator { color: #eeeee4; }
 .cm-s-inner .cm-keyword { color: #c5b7ff; }
@@ -84,6 +85,9 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 #typora-sidebar .file-list-item.active { background: var(--active-file-bg-color); border-left: 3px solid var(--active-file-border-color); color: var(--active-file-text-color); }
 #outline-content .outline-item:hover, #outline-content .outline-item.selected { background: var(--item-hover-bg-color); color: var(--text-color); }
 #outline-content .outline-label { font-family: var(--ui-font); }
+#outline-content { font-family: var(--ui-font); font-size: .9rem; line-height: 1.45; }
+#outline-content .outline-item { padding: .28rem .75rem; }
+#outline-content .outline-item-children { border-left: 1px solid #d3d2c5; }
 .md-fences.md-focus { border-color: var(--primary-color); }
 .megamenu-content, .modal-content, .context-menu { background: var(--paper); color: var(--text-color); }
 .megamenu-menu-header, .megamenu-menu-list li a { color: var(--text-color); }
@@ -92,4 +96,4 @@ body { background: var(--bg-color); color: var(--text-color); font-family: var(-
 input, textarea, select { background: var(--paper); color: var(--text-color); border-color: #8b8e80; }
 ::-webkit-scrollbar-thumb { background: #8b8e80; } ::-webkit-scrollbar-track { background: var(--bg-color); }
 @media print { html, body { background: #fff !important; } #write { max-width: none; padding: 1rem; color: #000; } #typora-sidebar { display: none; } #write pre.md-fences { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
-@media (max-width: 700px) { #write { padding: 3.5rem 1.5rem 5rem; font-size: 1rem; } #write h1 { font-size: 2.5rem; } #write h2 { font-size: 1.75rem; } }
+@media (max-width: 700px) { #write { max-width: none; padding: 3.5rem 1.5rem 5rem; font-size: 1rem; } #write > * { max-width: none; } #write h1 { font-size: 2.5rem; } #write h2 { font-size: 1.75rem; } }
